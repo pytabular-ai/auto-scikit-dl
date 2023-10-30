@@ -1,0 +1,49 @@
+model:
+  cross_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  d:
+    min: 64
+    max: 512
+    type: "int"
+    min2: 64
+    max2: 1024
+    type2: "int"
+  hidden_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  n_cross_layers:
+    min: 1
+    max: 8
+    type: "int"
+    min2: 1
+    max2: 16
+    type2: "int"
+  n_hidden_layers:
+    min: 1
+    max: 8
+    type: "int"
+    min2: 1
+    max2: 16
+    type2: "int"
+  stacked:
+    value: false
+    type: "const"
+  d_embedding:
+    min: 64
+    max: 512
+    type: "int"
+training:
+  lr:
+    min: 1.0e-5
+    max: 1.0e-2
+    type: "loguniform"
+  weight_decay:
+    min: 1.0e-6
+    max: 1.0e-3
+    type: "loguniform"
+  optimizer:
+    value: "adamw"
+    type: "const"

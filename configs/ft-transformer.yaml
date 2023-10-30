@@ -1,0 +1,56 @@
+model:
+  d_token:
+    min: 64
+    max: 512
+    type: "int"
+
+  n_blocks:
+    min: 1
+    max: 4
+    type: "int"
+    # for large datasets
+    min2: 1
+    max2: 6
+    type2: "int"
+    
+  attention_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  
+  ffn_d_factor:
+    min: 0.66
+    max: 2.66
+    type: "uniform"
+    value2: 1.33
+    type2: "const"
+
+  ffn_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  
+  residual_dropout:
+    min: 0
+    max: 0.2
+    type: "uniform"
+    value2: 0
+    type2: "const"
+
+training:
+  lr:
+    min: 1.0e-5
+    max: 1.0e-3
+    type: "loguniform"
+    min2: 3.0e-5
+    max2: 3.0e-4
+    type2: "loguniform"
+    
+  weight_decay:
+    min: 1.0e-6
+    max: 1.0e-3
+    type: "loguniform"
+    
+  optimizer:
+    value: "adamw"
+    type: "const"

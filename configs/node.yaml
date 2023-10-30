@@ -1,0 +1,30 @@
+model:
+  bin_function:
+    value: "entmoid15"
+    type: "const"
+  choice_function:
+    value: "entmax15"
+    type: "const"
+  depth:
+    min: 6
+    max: 8
+    type: "int"
+  layer_dim:
+    choices: [128, 256, 512]
+    type: "categorical"
+  num_layers:
+    choices: [2, 4, 8]
+    type: "categorical"
+  d_embedding:
+    value: 256
+    type: "const"
+training:
+  lr:
+    value: 1.0e-3
+    type: "const"
+  weight_decay:
+    value: 0.0
+    type: "const"
+  optimizer:
+    value: "adam"
+    type: "const"

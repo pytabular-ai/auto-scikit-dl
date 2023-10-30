@@ -1,0 +1,44 @@
+model:
+  activation:
+    value: "relu"
+    type: "const"
+  initialization:
+    value: "kaiming"
+    type: "const"
+  n_heads:
+    value: 2
+    type: "const"
+  prenormalization:
+    value: false
+    type: "const"
+  attention_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  d_token:
+    min: 8
+    max: 64
+    type: "int"
+  n_layers:
+    min: 1
+    max: 6
+    type: "int"
+  residual_dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"  
+training:
+  lr:
+    min: 1.0e-5
+    max: 1.0e-3
+    type: "loguniform"
+    min2: 3.0e-5
+    max2: 3.0e-4
+    type2: "loguniform"
+  weight_decay:
+    min: 1.0e-6
+    max: 1.0e-3
+    type: "loguniform"
+  optimizer:
+    value: "adamw"
+    type: "const"

@@ -1,0 +1,60 @@
+model:
+  n_layers:
+    min: 1
+    max: 8
+    type: "int"
+    # for large datasets
+    min2: 1
+    max2: 16
+    type2: "int"
+
+  first_dim:
+    min: 1
+    max: 512
+    type: "int"
+    # for large datasets
+    min2: 1
+    max2: 1024
+    type2: "int"
+    
+  mid_dim:
+    min: 1
+    max: 512
+    type: "int"
+    # for large datasets
+    min2: 1
+    max2: 1024
+    type2: "int"
+  
+  last_dim:
+    min: 1
+    max: 512
+    type: "int"
+    # for large datasets
+    min2: 1
+    max2: 1024
+    type2: "int"
+
+  dropout:
+    min: 0
+    max: 0.5
+    type: "uniform"
+  
+  d_embedding:
+    min: 64
+    max: 512
+    type: "int"
+  
+training:
+  lr:
+    min: 1.0e-5
+    max: 1.0e-2
+    type: "loguniform"
+        
+  weight_decay:
+    value: 0.0
+    type: "const"
+  
+  optimizer:
+    value: "adamw"
+    type: "const"

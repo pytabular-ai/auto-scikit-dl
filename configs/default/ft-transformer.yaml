@@ -1,0 +1,11 @@
+model:
+  d_token: 64
+  n_blocks: 3    
+  attention_dropout: 0.2
+  ffn_d_factor: 1.33
+  ffn_dropout: 0.3
+  residual_dropout: 0.1
+training:
+  lr: 5.0e-4    
+  weight_decay: 2.0e-5
+  optimizer: "adamw"
