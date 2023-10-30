@@ -39,7 +39,7 @@ The project is organized into serveral parts:
 
 ## Examples
 
-Some basic usage examples are provided in `examples` directory, you can run the scripts with `python examples/script_name.py`. Before run the examples, you can download our preprared in-built datasets in the [T2G-Former](https://arxiv.org/abs/2211.16887) experiment from this [link](https://drive.google.com/uc?export=download&id=1dIp78bZo0I0TJATmZKzBhrbZxFVzJYLR), than run the following script to extract to `data/datasets` folder.
+Some basic usage examples are provided in `examples` directory, you can run the scripts with `python examples/script_name.py`. Before run the examples, you can download our preprared in-built datasets in the [T2G-Former](https://arxiv.org/abs/2211.16887) experiment from this [link](https://drive.google.com/uc?export=download&id=1dIp78bZo0I0TJATmZKzBhrbZxFVzJYLR), then extract to `data/datasets` folder.
 
 ```
 tar -zxvf t2g-data0.tar.gz -C ./data/datasets
