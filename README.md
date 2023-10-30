@@ -4,7 +4,7 @@
 
 *Auto-Scikit-DL* is a deep tabular learning package served as a complement to scikit-learn. It will contain classical and advanced deep model baselines in tabular (machine) learning, automatic feature engineering and model selection methods, flexible training paradigm customization. This project aims to provide unified baseline interface and benchmark usage for the academic community, convenient pipeline construction for the machine learning competition, and rapid engineering experiment for machine learning projects, helping people focus on the specific algorithm design.
 
-It is currently under construction by [LionSenSei](https://github.com/jyansir). More baselines are coming soon. The project will be packaged for public use in the future. If there are any problems or suggestions, feel free to contact [this email](jyansir@zju.edu.cn).
+It is currently under construction by [LionSenSei](https://github.com/jyansir). More baselines are coming soon. The project will be packaged for public use in the future. If there are any problems or suggestions, feel free to contact [jyansir@zju.edu.cn]().
 
 
 ## Baselines
